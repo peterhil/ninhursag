@@ -1,3 +1,5 @@
+@use "../variables.scss" as *;
+
 .button-action {
 	@include button-color(var(--color-action), var(--color-text-inverse));
 }

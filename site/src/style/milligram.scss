@@ -1,21 +1,23 @@
 // Modules
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
+@use "../variables.scss" as *;
+
 // Hack: Prevent showing purple primary colour through
 $color-primary: var(--color-text-inverse);
 
-@import 'milligram/src/_Color';
-@import 'milligram/src/_Base';
-@import 'milligram/src/_Blockquote';
-// @import 'milligram/src/_Button';
-@import 'milligram/src/_Code';
-@import 'milligram/src/_Divider';
-@import 'milligram/src/_Form';
-// @import 'milligram/src/_Grid';
-@import 'milligram/src/_Link';
-@import 'milligram/src/_List';
-@import 'milligram/src/_Spacing';
-@import 'milligram/src/_Table';
-@import 'milligram/src/_Typography';
-@import 'milligram/src/_Image';
-@import 'milligram/src/_Utility';
+@use 'milligram/src/_Color';
+@use 'milligram/src/_Base';
+@use 'milligram/src/_Blockquote';
+// @use 'milligram/src/_Button';
+@use 'milligram/src/_Code';
+@use 'milligram/src/_Divider';
+@use 'milligram/src/_Form';
+// @use 'milligram/src/_Grid';
+@use 'milligram/src/_Link';
+@use 'milligram/src/_List';
+@use 'milligram/src/_Spacing';
+@use 'milligram/src/_Table';
+@use 'milligram/src/_Typography';
+@use 'milligram/src/_Image';
+@use 'milligram/src/_Utility';

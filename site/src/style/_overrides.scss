@@ -1,6 +1,8 @@
 //
 // Override milligram styles
 
+@use "../variables.scss" as *;
+
 button,
 .button,
 input[type="button"],

@@ -1,6 +1,8 @@
 //
 // Layout
 
+@use "../variables.scss" as *;
+
 body {
 	font-family: $font-set-body;
 	font-weight: 400;
