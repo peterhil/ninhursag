@@ -121,8 +121,8 @@ importers:
         specifier: ^5.14.0
         version: 5.14.0(rollup@4.40.1)
       sass:
-        specifier: ^1.86.3
-        version: 1.87.0
+        specifier: <1.73.0
+        version: 1.72.0
       svelte:
         specifier: ^4.2.19
         version: 4.2.19
@@ -134,7 +134,7 @@ importers:
         version: 4.1.6(picomatch@4.0.2)(svelte@4.2.19)(typescript@5.8.3)
       svelte-preprocess:
         specifier: ^6.0.3
-        version: 6.0.3(postcss-load-config@5.1.0(postcss@8.5.3))(postcss@8.5.3)(sass@1.87.0)(sugarss@4.0.1(postcss@8.5.3))(svelte@4.2.19)(typescript@5.8.3)
+        version: 6.0.3(postcss-load-config@5.1.0(postcss@8.5.3))(postcss@8.5.3)(sass@1.72.0)(sugarss@4.0.1(postcss@8.5.3))(svelte@4.2.19)(typescript@5.8.3)
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
@@ -1418,6 +1418,9 @@ packages:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
     engines: {node: '>= 4'}
 
+  immutable@4.3.7:
+    resolution: {integrity: sha512-1hqclzwYwjRDFLjcFxOM5AYkkG0rpFPpr1RLPMEuGczoS7YA8gLhy8SWXYRAA/XwfEHpfo3cw5JGioS32fnMRw==}
+
   immutable@5.1.1:
     resolution: {integrity: sha512-3jatXi9ObIsPGr3N5hGw/vWWcTkq6hUYhpQz4k0wLC+owqWi/LiugIw9x0EdNZ2yGedKN/HzePiBvaJRXa0Ujg==}
 
@@ -1882,6 +1885,11 @@ packages:
 
   safe-buffer@5.2.1:
     resolution: {integrity: sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==}
+
+  sass@1.72.0:
+    resolution: {integrity: sha512-Gpczt3WA56Ly0Mn8Sl21Vj94s1axi9hDIzDFn9Ph9x3C3p4nNyvsqJoQyVXKou6cBlfFWEgRW4rT8Tb4i3XnVA==}
+    engines: {node: '>=14.0.0'}
+    hasBin: true
 
   sass@1.87.0:
     resolution: {integrity: sha512-d0NoFH4v6SjEK7BoX810Jsrhj7IQSYHAHLi/iSpgqKc7LaIDshFRlSg5LOymf9FqQhxEHs2W5ZQXlvy0KD45Uw==}
@@ -3284,6 +3292,8 @@ snapshots:
 
   ignore@5.3.2: {}
 
+  immutable@4.3.7: {}
+
   immutable@5.1.1: {}
 
   import-fresh@3.3.1:
@@ -3702,6 +3712,12 @@ snapshots:
 
   safe-buffer@5.2.1: {}
 
+  sass@1.72.0:
+    dependencies:
+      chokidar: 3.6.0
+      immutable: 4.3.7
+      source-map-js: 1.2.1
+
   sass@1.87.0:
     dependencies:
       chokidar: 4.0.3
@@ -3843,13 +3859,13 @@ snapshots:
       sugarss: 4.0.1(postcss@8.5.3)
       typescript: 5.8.3
 
-  svelte-preprocess@6.0.3(postcss-load-config@5.1.0(postcss@8.5.3))(postcss@8.5.3)(sass@1.87.0)(sugarss@4.0.1(postcss@8.5.3))(svelte@4.2.19)(typescript@5.8.3):
+  svelte-preprocess@6.0.3(postcss-load-config@5.1.0(postcss@8.5.3))(postcss@8.5.3)(sass@1.72.0)(sugarss@4.0.1(postcss@8.5.3))(svelte@4.2.19)(typescript@5.8.3):
     dependencies:
       svelte: 4.2.19
     optionalDependencies:
       postcss: 8.5.3
       postcss-load-config: 5.1.0(postcss@8.5.3)
-      sass: 1.87.0
+      sass: 1.72.0
       sugarss: 4.0.1(postcss@8.5.3)
       typescript: 5.8.3
 
