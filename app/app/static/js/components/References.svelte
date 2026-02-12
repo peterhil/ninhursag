@@ -34,5 +34,10 @@
                 Scientific Python (Scipy) statistical functions
             </a>
         </li>
+        <li>
+            <a href="https://github.com/peterhil/ninhursag">
+                Source code on Github
+            </a>
+        </li>
     </ul>
 </section>
