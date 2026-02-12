@@ -13,8 +13,8 @@ body {
     text-rendering: optimizeLegibility;
     margin: 0;
     padding: 0;
-    background-color: $color-white;
-    color: $color-text;
+    background-color: var(--pico-background-color);
+    color: var(--pico-color);
     hyphens: auto;
     text-overflow: ellipsis;
 }
@@ -31,11 +31,11 @@ i {
 nav.navigation {
     font-family: $font-set-headings;
     font-weight: 500;
-    background-color: $color-light;
-    color: $color-text;
+    background-color: var(--pico-background-color);
+    color: var(--pico-color);
     border: clamp(20px, 4vw, 70px) solid $color-primary;
-    border-block-color: $color-white;
-    border-top: 3vh solid $color-white;
+    border-block-color: var(--pico-background-color);
+    border-top-width: 3vh;
 
     section {
         padding-inline: $padding-inline;

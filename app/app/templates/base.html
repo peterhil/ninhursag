@@ -15,10 +15,10 @@
 
     {%- block styles %}
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400&family=Vesper%20Libre:wght@500;700&family=IBM%20Plex%20Sans:wght@400&family=Lora:ital,wght@0,400;1,400">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.fluid.classless.min.css"
-    >
-    {%- assets "css_app"
-    %}
+    {%- assets "css_pico" %}
+    <link rel="stylesheet" type="text/css" media="all" href="{{ ASSET_URL }}" />
+    {%- endassets %}
+    {%- assets "css_app" %}
     <link rel="stylesheet" type="text/css" media="all" href="{{ ASSET_URL }}" />
     {%- endassets %}
     {%- endblock %}
