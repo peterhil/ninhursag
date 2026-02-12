@@ -26,7 +26,6 @@
     "events": "^3.3.0",
     "humanize-plus": "1.8.2",
     "js-cookie": "^3.0.5",
-    "milligram": "^1.4.1",
     "papaparse": "^5.5.2",
     "ramda": "0.27.1",
     "soundex-code": "0.1.2",

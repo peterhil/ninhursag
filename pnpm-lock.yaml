@@ -32,9 +32,6 @@ importers:
       js-cookie:
         specifier: ^3.0.5
         version: 3.0.5
-      milligram:
-        specifier: ^1.4.1
-        version: 1.4.1
       papaparse:
         specifier: ^5.5.2
         version: 5.5.2
