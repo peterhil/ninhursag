@@ -58,7 +58,7 @@
     "rollup-plugin-svelte": "^7.2.2",
     "rollup-plugin-svg": "^2.0.0",
     "rollup-plugin-visualizer": "^5.14.0",
-    "sass": "<1.73.0",
+    "sass": "^1.97.3",
     "svelte": "^4.2.19",
     "svelte-asyncable": "^2.2.1",
     "svelte-check": "^4.1.6",
