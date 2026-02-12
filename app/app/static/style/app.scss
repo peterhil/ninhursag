@@ -2,8 +2,8 @@
 // Styles
 // --------------------------------------------------
 
-@import 'variables';
-@import 'octocat';
+@use 'variables' as *;
+@use 'octocat';
 
 // Typography
 
