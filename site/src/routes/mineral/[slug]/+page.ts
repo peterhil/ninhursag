@@ -2,6 +2,8 @@ import type { PageLoad } from './$types'
 
 import api from '$lib/api'
 
+export const ssr = false
+
 export const load = (async ({ params }) => {
 	const functions = await api.get('/api/v1/estimate')
 	const minerals = await api.get('/api/v1/minerals')
