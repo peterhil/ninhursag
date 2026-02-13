@@ -1,12 +1,12 @@
 <a
 	class="octocat"
 	title="Ninhursag on Github"
+	aria-label="Octocat waving at you, inviting you to look at
+				Ninhursag’s open source code"
 	href="https://github.com/peterhil/ninhursag"
 	rel="noreferrer"
 	target="_blank">
 	<svg
-		aria-label="Octocat waving at you, inviting you to look at
-					Ninhursag’s open source code"
 		version="1.1"
 		viewBox="0 0 32 32"
 		width="64" height="64"
