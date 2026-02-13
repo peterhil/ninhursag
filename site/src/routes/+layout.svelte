@@ -1,6 +1,6 @@
 <script lang="ts">
-	import '../app.scss'
-	import '../app.postcss'
+	import '$style/app.scss'
+	import '$style/app.postcss'
 
 	import Navbar from '$component/Navbar.svelte'
 	import Alerts from '$component/Alerts.svelte'
