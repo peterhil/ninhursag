@@ -11,16 +11,16 @@
 @use '$style/core';
 @use '$style/typography';
 @use '$style/accessibility';
-@use '$style/display-util';
+@use '$style/util';
 
 // Generic component styles
 @use '$style/alerts';
 @use '$style/buttons';
 @use '$style/forms';
 @use '$style/icons';
+@use '$style/images';
 @use '$style/loading';
 
 // Specific to Ninhursag
 @use '$style/chart';
-@use '$style/media';
 @use '$style/selections';
