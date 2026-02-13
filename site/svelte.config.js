@@ -12,7 +12,6 @@ const config = {
 			scss: {
 				prependData: '@use "$style/variables.scss" as *;'
 			},
-			postcss: true
 		})
 	],
 	kit: {
