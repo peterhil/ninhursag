@@ -1,0 +1,38 @@
+// Layout
+
+@use "$style/variables.scss" as *;
+
+.content {
+	padding: 0 $padding-inline;
+
+	.flex {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+
+		.images {
+			flex-basis: 38vw;
+		}
+	}
+}
+
+@media (min-width: $size-md) {
+	.content {
+		.flex {
+			flex-direction: row;
+		}
+	}
+}
+
+@media (min-width: $size-xl) {
+	.content {
+		.flex {
+			.images {
+				display: grid;
+				gap: 2rem;
+				grid-template-columns: 1fr 1fr 1fr;
+				flex-basis: 62vw;
+			}
+		}
+	}
+}
