@@ -19,13 +19,23 @@ $color-secondary: $color-grey;
 $color-text: $color-grey;
 $color-loading: $color-primary;
 
+// Breakpoints
+
+$size-sm: 576px !default;
+$size-md: 768px !default;
+$size-lg: 1024px !default;
+$size-xl: 1280px !default;
+$size-xxl: 1536px !default;
+
 // Font families
+
 $font-set-body: Quattrocento, Lora, serif;
 $font-set-headings: Vesper Libre, Quattrocento, Lora, serif;
 $font-set-figures: IBM Plex Sans, sans-serif;
 $font-set-italic: Lora, serif;
 
+// Other
+
 $loading-bg: $color-light;
 $loading-ratio: 62%;
-
 $padding-inline: clamp(20px, 5vw, 50px);
