@@ -1,0 +1,20 @@
+//
+// Base
+
+@use 'variables' as *;
+
+body {
+    font-family: $font-set-body;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    margin: 0;
+    padding: 0;
+    background-color: var(--pico-background-color);
+    color: var(--pico-color);
+    hyphens: auto;
+    text-overflow: ellipsis;
+}
+
+main {
+    padding: 0 $padding-inline;
+}

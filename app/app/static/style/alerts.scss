@@ -1,0 +1,35 @@
+//
+// Alerts
+
+@use 'variables' as *;
+
+#notifications {
+    .growl {
+        z-index: 3000;
+        top: 70px;
+    }
+
+    &.in-page .growl {
+        position: static;
+        width: 100%;
+        float: none;
+    }
+
+    .growl-container > .growl-item {
+        background-position: center;
+    }
+}
+
+.alert-box {
+    padding: 10px;
+    padding-right: 35px;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    .close {
+        right: 0;
+        top: 0;
+        margin: 0;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,28 @@
+//
+// Navigation
+
+@use 'variables' as *;
+
+nav.navigation {
+    font-family: $font-set-headings;
+    font-weight: 500;
+    background-color: var(--pico-background-color);
+    color: var(--pico-color);
+    border: clamp(20px, 4vw, 70px) solid $color-primary;
+    border-block-color: var(--pico-background-color);
+    border-top-width: 3vh;
+
+    section {
+        padding-inline: $padding-inline;
+    }
+
+    a {
+        color: $color-primary;
+    }
+
+    h1 {
+        display: inline-block;
+        padding: 1rem 0;
+        font-size: clamp(18px, 6vw, 4rem);
+    }
+}
