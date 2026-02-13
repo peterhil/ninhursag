@@ -47,15 +47,15 @@
 					<SvgChart {data}></SvgChart>
 					{/snippet}
 				</DataLoader>
+				<figcaption>
+					Metric tons gross weight.
+					<small>Source:</small>
+					<a href={sourceUrl} target="_blank" rel="noreferrer">
+						{caption}
+					</a>
+					<small>Historical Statistics for Mineral and Material Commodities</small>
+				</figcaption>
 			</figure>
-			<figcaption>
-				Metric tons gross weight.
-				<small>Source:</small>
-				<a href={sourceUrl} target="_blank" rel="noreferrer">
-					{caption}
-				</a>
-				<small>Historical Statistics for Mineral and Material Commodities</small>
-			</figcaption>
 		</div>
 
 		<aside class="images">
