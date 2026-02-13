@@ -1,8 +1,15 @@
 @use "$style/variables.scss" as *;
 
+img {
+	width: auto;
+	max-width: 100%;
+	height: auto;
+	max-height: 100%;
+}
+
 img.mineral {
 	width: 100%;
-	height: auto;
 	max-width: 100%;
+	height: auto;
 	max-height: 100%;
 }
