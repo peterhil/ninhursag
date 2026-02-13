@@ -1,7 +1,7 @@
 //
 // Typography
 
-@use "../variables.scss" as *;
+@use "$style/variables.scss" as *;
 
 i {
 	font-family: $font-set-italic;

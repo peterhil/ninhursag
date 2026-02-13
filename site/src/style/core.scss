@@ -1,7 +1,7 @@
 //
 // Layout
 
-@use "../variables.scss" as *;
+@use "$style/variables.scss" as *;
 
 body {
 	font-family: $font-set-body;

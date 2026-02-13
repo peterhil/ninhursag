@@ -1,4 +1,4 @@
-@use "../variables.scss" as *;
+@use "$style/variables.scss" as *;
 
 @media (max-width: $size-sm) {
 	input[type="checkbox"],
