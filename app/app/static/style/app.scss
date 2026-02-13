@@ -4,8 +4,7 @@
 
 @use 'sass:color';
 @use 'variables' as *;
-
-// Typography
+@use 'typography';
 
 :root {
   color-scheme: light dark;
@@ -25,11 +24,6 @@ body {
 
 main {
     padding: 0 $padding-inline;
-}
-
-i {
-    font-family: $font-set-italic;
-    font-style: italic,
 }
 
 nav.navigation {
@@ -56,49 +50,11 @@ nav.navigation {
     }
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: $font-set-headings;
-    font-weight: 500;
-    margin-block: 1.62rem 1.38rem;
-}
-
-h1, h2, h3 {
-    line-height: 1.2;
-}
-
-@media (min-width: 40rem) {
-    h1, h2, h3 {
-        hyphens: none;
-    }
-}
-
-h1 {
-    font-weight: 700;
-}
-
-a {
-    color: $color-primary;
-}
-
-hr {
-    border: 10px solid $color-primary;
-}
-
 img {
     width: auto;
     max-width: 100%;
     height: auto;
     max-height: 100%;
-}
-
-ul {
-    margin-left: 0;
-    list-style: '💎';
-    padding-left: 1em;
-}
-
-li {
-    padding-left: 1rem;
 }
 
 #notifications {
