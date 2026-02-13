@@ -24,23 +24,8 @@ nav.navigation {
 	font-family: $font-set-headings;
 	font-weight: 500;
 
-	@media (prefers-color-scheme: dark) {
-		background-image: linear-gradient(
-			0.1turn,
-			transparent 19%,
-			#ffe170 100%
-		);
-	}
-
 	section.name {
 		display: block ruby;
-	}
-
-	section.controls {
-		flex-basis: 60%;
-		width: 100%;
-		margin: auto;
-		align-self: self-end;
 	}
 
 	a {
@@ -55,6 +40,14 @@ nav.navigation {
 		display: inline-block;
 		padding-top: 0.5rem;
 		font-size: clamp(18px, 6vw, 4rem);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		background-image: linear-gradient(
+			0.1turn,
+			transparent 19%,
+			#ffe170 100%
+		);
 	}
 }
 
