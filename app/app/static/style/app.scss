@@ -2,9 +2,14 @@
 // Styles
 // --------------------------------------------------
 
+@use 'sass:color';
 @use 'variables' as *;
 
 // Typography
+
+:root {
+  color-scheme: light dark;
+}
 
 body {
     font-family: $font-set-body;
@@ -154,13 +159,12 @@ figure {
 
         .grid .labels text,
         .legend text {
-            stroke: #fff;
-            stroke: rgba(255, 255, 255, 0.8);
-            stroke-width: 4px;
+            stroke: var(--pico-background-color);
+            stroke-width: 3px;
             paint-order: stroke;
         }
         .grid line {
-            stroke: #eee;
+            stroke: light-dark(#eee, #27272780);
         }
         .chart .line,
         .legend .line {
