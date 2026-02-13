@@ -7,6 +7,7 @@
     import LogScaleCheckbox from '../components/LogScaleCheckbox.svelte'
     import SelectFunction from '../components/SelectFunction.svelte'
     import SelectMineral from '../components/SelectMineral.svelte'
+
     import { chart } from '../stores/chart'
     import { fn } from '../stores/function'
     import { scale } from '../stores/scale'
@@ -20,25 +21,19 @@
     <div class="small-12 large-9 columns">
         <h2>{$mineral}</h2>
 
-        <div class="row">
-            <div class="large-4 medium-6 columns">
+        <section class="controls">
+            <div class="selections">
                 <SelectMineral bind:selected="{$mineral}" />
-            </div>
-            <div class="large-4 medium-6 columns">
                 <SelectFunction bind:selected="{$fn}" />
             </div>
-        </div>
 
-        <div class="row">
-            <div class="large-4 medium-6 columns">
+            <div class="scale">
                 <LogScaleCheckbox bind:scale="{$scale}" />
+                {#if $scale === 'linear' }
+                    <CheckboxShowAll bind:showAll="{$showAll}" />
+                {/if}
             </div>
-            {#if $scale === 'linear' }
-            <div class="large-4 medium-6 columns">
-                <CheckboxShowAll bind:showAll="{$showAll}" />
-            </div>
-            {/if}
-        </div>
+        </section>
 
         <figure>
             <figcaption>{caption}</figcaption>
