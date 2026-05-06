@@ -36,6 +36,10 @@ a {
 	}
 }
 
+:where(a:not([role="button"])), [role="link"] {
+	text-decoration-color: var(--color-text-decoration);
+}
+
 hr {
 	border: 10px solid var(--color-action);
 }
