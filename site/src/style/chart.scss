@@ -22,6 +22,7 @@ figure {
 		// box-shadow: 0px 10px 18px 1px rgba(34,34,34,0.46);
 	}
 	svg {
+		box-sizing: border-box;
 		padding: 1em;
 
 		.grid .labels text,
