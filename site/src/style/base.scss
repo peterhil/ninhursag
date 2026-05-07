@@ -2,6 +2,10 @@
 
 @use "$style/variables.scss" as *;
 
+* {
+	box-sizing: border-box;
+}
+
 body {
 	font-family: $font-set-body;
 	font-weight: 400;
