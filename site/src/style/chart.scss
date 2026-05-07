@@ -1,96 +1,84 @@
 @use "$style/variables.scss" as *;
 
-figure {
-	margin: 0;
-	font-family: $font-set-figures;
+svg.chart {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 0.25rem;
+	border: 2px solid var(--color-text);
 
-	figcaption {
-		margin: 0.5rem 0 0.75rem;
-		font-family: $font-set-body;
+	@media (min-width: $size-md) {
+		padding: 1rem;
 	}
 
-	svg {
-		position: relative;
-		width: 100%;
-		height: 100%;
-		padding: 0.25rem;
-		border: 2px solid var(--color-text);
+	text {
+		fill: var(--color-chart-fill);
+		stroke: var(--color-chart-stroke);
+		stroke-width: 4px;
+		paint-order: stroke;
+	}
 
-		@media (min-width: $size-md) {
-			padding: 1rem;
+	.grid line {
+		stroke: var(--color-grid-stroke);
+	}
+
+	.line {
+		fill: none;
+		stroke-width: 2px;
+
+		&.series-0 {
+			stroke: #222222;
 		}
-
-		.grid .labels text,
-		.legend text {
-			fill: var(--color-chart-fill);
-			stroke: var(--color-chart-stroke);
-			stroke-width: 4px;
-			paint-order: stroke;
+		&.series-1 {
+			stroke: #ffaa00;
 		}
-
-		.grid line {
-			stroke: var(--color-grid-stroke);
+		&.series-2 {
+			stroke: #ff0055;
 		}
-
-		.chart .line,
-		.legend .line {
-			fill: none;
-			stroke-width: 2px;
-
-			&.series-0 {
-				stroke: #222222;
-			}
-			&.series-1 {
-				stroke: #ffaa00;
-			}
-			&.series-2 {
-				stroke: #ff0055;
-			}
-			&.series-3 {
-				stroke: #0088ff;
-			}
-			&.series-4 {
-				stroke: #88ff44;
-			}
-			&.series-5 {
-				stroke: #88ffff;
-			}
-			&.series-6 {
-				stroke: #88f;
-			}
-			&.series-7 {
-				stroke: #999;
-			}
-			&.series-8 {
-				stroke: #34f;
-			}
-			&.series-9 {
-				stroke: #f79;
-			}
-			&.series-10 {
-				stroke: #f3f;
-			}
-			&.series-11 {
-				stroke: #749;
-			}
-			&.series-12 {
-				stroke: #f43;
-			}
-			&.series-13 {
-				stroke: #497;
-			}
-			&.series-14 {
-				stroke: #4f3;
-			}
-			&.series-15 {
-				stroke: #f0f055;
-			}
-			&.series-16 {
-				stroke: #008f8f;
-			}
-			&.series-17 {
-				stroke: #8f8f44;
-			}
+		&.series-3 {
+			stroke: #0088ff;
+		}
+		&.series-4 {
+			stroke: #88ff44;
+		}
+		&.series-5 {
+			stroke: #88ffff;
+		}
+		&.series-6 {
+			stroke: #88f;
+		}
+		&.series-7 {
+			stroke: #999;
+		}
+		&.series-8 {
+			stroke: #34f;
+		}
+		&.series-9 {
+			stroke: #f79;
+		}
+		&.series-10 {
+			stroke: #f3f;
+		}
+		&.series-11 {
+			stroke: #749;
+		}
+		&.series-12 {
+			stroke: #f43;
+		}
+		&.series-13 {
+			stroke: #497;
+		}
+		&.series-14 {
+			stroke: #4f3;
+		}
+		&.series-15 {
+			stroke: #f0f055;
+		}
+		&.series-16 {
+			stroke: #008f8f;
+		}
+		&.series-17 {
+			stroke: #8f8f44;
 		}
 	}
 }

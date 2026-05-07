@@ -66,7 +66,7 @@
 	})
 </script>
 
-<svg {width} {height} {preserveAspectRatio} {viewBox}>
+<svg class="chart" {width} {height} {preserveAspectRatio} {viewBox}>
 	<GridLines {width} {height} {x} {y} />
 	<LineSeries {data} {line} />
 	<GridLabels {height} {x} {y} />

@@ -22,3 +22,12 @@ body {
 	color: var(--color-text-inverse);
 	background-color: var(--color-accent);
 }
+
+figure {
+	margin: 0;
+	font-family: $font-set-figures;
+
+	figcaption {
+		margin-block: 0.5rem 0.75rem;
+	}
+}
