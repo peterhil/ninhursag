@@ -10,8 +10,8 @@ nav.navigation {
 	padding: 1rem;
 	border: clamp(20px, 4vw, 42px) solid var(--nav-bg);
 	border-right-width: clamp(20px, 6vw, 70px);
-	border-top-width: 2.4vh;
-	border-block-color: transparent;
+	border-bottom-color: transparent;
+	border-top: none;
 
 	background-color: var(--nav-bg);
 	background-clip: padding-box;
