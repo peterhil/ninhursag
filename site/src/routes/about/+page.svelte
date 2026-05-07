@@ -1,5 +1,5 @@
 <script lang="ts">
-	import NavbarBasic from '$component/NavbarBasic.svelte'
+	import Navbar from '$component/Navbar.svelte'
 	import References from '$component/References.svelte'
 </script>
 
@@ -7,7 +7,7 @@
 	<title>About Ninhursag</title>
 </svelte:head>
 
-<NavbarBasic />
+<Navbar />
 
 <div class="content">
 	<h1>Ninhursag</h1>

@@ -10,6 +10,6 @@
 		<a href="/about/">About</a>
 	</section>
 	<section class="controls">
-		{@render controls()}
+		{@render controls?.()}
 	</section>
 </nav>
