@@ -9,14 +9,18 @@
 	type OutputProps = PageData & MineralsOutput
 
 	interface Props {
-		data: OutputProps;
+		data: OutputProps
 	}
 
-	let { data }: Props = $props();
+	let { data }: Props = $props()
 </script>
 
-<main>
+<svelte:head>
+	<title>{data.mineral || 'Statistics' } | Ninhursag</title>
+</svelte:head>
+
+<div class="page">
 	<!-- <IconButtons /> -->
 	<!-- <AlertTest /> -->
 	<Minerals {data}/>
-</main>
+</div>

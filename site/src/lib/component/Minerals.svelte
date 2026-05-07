@@ -36,7 +36,7 @@
 
 <Navbar {controls} />
 
-<div class="content">
+<main class="content">
 	<h2 class="hide-xs">{$mineral}</h2>
 
 	<div class="flex">
@@ -62,4 +62,4 @@
 			<Images mineral={$mineral} />
 		</aside>
 	</div>
-</div>
+</main>
