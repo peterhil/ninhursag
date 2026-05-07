@@ -38,6 +38,9 @@
 
 <main class="content">
 	<h2 class="hide-xs">{$mineral}</h2>
+	<section class="controls">
+		{@render controls?.()}
+	</section>
 
 	<div class="flex">
 		<div>

@@ -33,7 +33,7 @@
 	</div>
 	<select
 		id="function"
-		class="button button-action"
+		class="button button-action button-outline"
 		aria-label={title}
 		onchange={onSelectedDebounced}>
 		{#each functions.pdf as fn (fn)}

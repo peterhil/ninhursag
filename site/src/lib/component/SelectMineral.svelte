@@ -28,7 +28,7 @@
 <label for="mineral">
 	<div>
 		<span class="hide-xxs">
-			<IconPark icon={HeavyMetal} size={24} />
+			<IconPark class="icon" icon={HeavyMetal} size={24} />
 		</span>
 		<span class="hide-sm">
 			{title}
@@ -36,7 +36,7 @@
 	</div>
 	<select
 		id="mineral"
-		class="button button-action"
+		class="button button-action button-outline"
 		{title}
 		onchange={onSelectedDebounced}
 		>
