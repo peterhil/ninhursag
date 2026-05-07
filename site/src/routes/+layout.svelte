@@ -1,11 +1,12 @@
 <script lang="ts">
 	import '$style/app.scss'
 
-	import Navbar from '$component/Navbar.svelte'
+	import type { Snippet } from 'svelte';
+
 	import Alerts from '$component/Alerts.svelte'
 
 	interface Props {
-		children?: import('svelte').Snippet
+		children?: Snippet
 	}
 
 	let { children }: Props = $props()

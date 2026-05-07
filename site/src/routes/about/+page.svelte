@@ -3,6 +3,10 @@
 	import References from '$component/References.svelte'
 </script>
 
+<svelte:head>
+	<title>About Ninhursag</title>
+</svelte:head>
+
 <NavbarBasic />
 
 <div class="content">
