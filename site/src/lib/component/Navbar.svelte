@@ -2,7 +2,7 @@
 	let { controls } = $props()
 </script>
 
-<nav class="navigation">
+<nav class="navbar">
 	<section class="name">
 		<h1>
 			<a href="/mineral">Ninhursag</a>

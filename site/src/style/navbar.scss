@@ -1,8 +1,8 @@
-// Navigation
+// Navbar
 
 @use "$style/variables.scss" as *;
 
-nav.navigation {
+.navbar {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
@@ -52,7 +52,7 @@ nav.navigation {
 }
 
 @media (min-width: $size-md) {
-	nav.navigation {
+	.navbar {
 		flex-direction: row;
 
 		h1 {
