@@ -24,6 +24,18 @@
 	font-family: $font-set-headings;
 	font-weight: 500;
 
+	// triangle
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		aspect-ratio: 1;
+		width: clamp(20px, 6vw, 70px);
+		clip-path: polygon(0 0,100% 0,100% 100%);
+		background: var(--color-bg);
+	}
+
 	section.name {
 		display: block ruby;
 	}
