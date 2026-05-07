@@ -1,6 +1,4 @@
 <script>
-	import Octocat from '$component/Octocat.svelte'
-
 	let { controls } = $props()
 </script>
 
@@ -14,5 +12,4 @@
 	<section class="controls">
 		{@render controls()}
 	</section>
-	<Octocat />
 </nav>

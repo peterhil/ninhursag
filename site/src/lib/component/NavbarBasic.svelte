@@ -1,7 +1,3 @@
-<script>
-	import Octocat from '$component/Octocat.svelte'
-</script>
-
 <nav class="navigation">
 	<section class="name">
 		<h1>
@@ -9,5 +5,4 @@
 		</h1>
 		<a href="/about/">About</a>
 	</section>
-	<Octocat />
 </nav>

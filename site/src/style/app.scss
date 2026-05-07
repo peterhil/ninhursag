@@ -4,10 +4,7 @@
 // Write your global styles here. Variables and mixins from the
 // src/variables.scss file are available here without importing
 
-
-@use '$style/octocat';
-
-// Core styles
+// Basic styles
 @use '$style/base';
 @use '$style/layout';
 @use '$style/typography';
