@@ -21,11 +21,11 @@
 </script>
 
 {#snippet controls()}
-<div class="selections">
+<div class="control selections">
 	<SelectMineral minerals={data.minerals} bind:selected={$mineral} />
 	<SelectFunction functions={data.functions} bind:selected={$fn} />
 </div>
-<div class="scale">
+<div class="control scale">
 	<span class="hide-sm">Scale</span>
 	<LogScaleCheckbox bind:scale={$scale} />
 	{#if $scale === 'linear'}
@@ -38,12 +38,13 @@
 
 <main class="content">
 	<h2 class="hide-xs">{$mineral}</h2>
-	<section class="controls">
-		{@render controls?.()}
-	</section>
 
-	<div class="flex">
-		<div>
+	<div class="content-grid">
+		<section class="controls">
+			{@render controls?.()}
+		</section>
+
+		<div  class="diagram">
 			<figure>
 				<DataLoader data={chart}>
 					{#snippet children({ data })}

@@ -8,35 +8,46 @@
 	h2 {
 		margin-block: 0.5rem;
 	}
+}
 
-	.flex {
-		display: flex;
-		flex-direction: column;
-		gap: 1.2rem;
+.content-grid {
+	display: grid;
+	grid-template-areas:
+		"ct"
+		"dg"
+		"im";
+	gap: 1.2rem;
 
-		.images {
-			flex-basis: 38vw;
-		}
+	.controls {
+		grid-area: ct;
+	}
+
+	.diagram {
+		grid-area: dg;
+	}
+
+	.images {
+		grid-area: im;
 	}
 }
 
 @media (min-width: $size-md) {
-	.content {
-		.flex {
-			flex-direction: row;
-		}
+	.content-grid {
+		grid-template-areas:
+			"ct ."
+			"dg im";
+		grid-template-columns: 62vw 1fr;
 	}
 }
 
 @media (min-width: $size-xl) {
-	.content {
-		.flex {
-			.images {
-				display: grid;
-				gap: 2rem;
-				grid-template-columns: 1fr 1fr 1fr;
-				flex-basis: 62vw;
-			}
+	.content-grid {
+		grid-template-columns: 38vw 1fr;
+
+		.images {
+			display: grid;
+			gap: 2rem;
+			grid-template-columns: 1fr 1fr 1fr;
 		}
 	}
 }

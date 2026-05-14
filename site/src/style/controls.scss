@@ -3,33 +3,28 @@
 @use "$style/variables.scss" as *;
 
 .controls {
-	flex-basis: 60%;
-	width: 100%;
-	margin: auto;
-	align-self: self-end;
-
-	.scale,
-	.selections {
-		display: inline-flex;
+	.control {
+		margin-block: 0.5rem;
+		display: flex;
 		flex-direction: column;
 		flex: 1 1 100%;
 		gap: 0.5rem;
-		margin-block: 0.5rem;
-	}
-
-	.scale label {
-		font-size: 0.8em;
 	}
 
 	.selections label {
 		display: flex;
+		flex-direction: row;
+	}
+
+	.scale label {
+		font-size: 0.8em;
+		flex-grow: 0;
 	}
 }
 
 @media (min-width: $size-xxs) {
 	.controls {
-		.scale,
-		.selections {
+		.control {
 			flex-direction: row;
 		}
 	}
@@ -37,16 +32,12 @@
 
 @media (min-width: $size-sm) {
 	.controls {
-		.scale {
-			width: auto;
-
-			label {
-				font-size: 1em;
-			}
+		.selections label {
+			flex-direction: column;
 		}
 
-		.selections label {
-			display: block;
+		.scale label {
+			font-size: 1em;
 		}
 	}
 }
