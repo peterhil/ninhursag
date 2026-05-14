@@ -52,7 +52,7 @@
 		display: inline-block;
 		margin-block: 0.25rem;
 		padding-top: 0.5rem;
-		font-size: clamp(18px, 6vw, 4rem);
+		font-size: clamp(18px, 4vw, 4rem);
 	}
 
 	@media (prefers-color-scheme: dark) {
