@@ -6,7 +6,6 @@ from werkzeug.middleware.proxy_fix import ProxyFix
 from . import factory
 from . import assets
 from . import log
-from .extensions import flatpages
 
 
 def create_app(settings_override=None):
@@ -18,10 +17,6 @@ def create_app(settings_override=None):
 
     # Init logging
     log.init_app(app)
-
-    # Flat pages
-    flatpages.init_app(app)
-    app.pages = flatpages
 
     # Register custom error handlers
     for code in [404, 500]:
