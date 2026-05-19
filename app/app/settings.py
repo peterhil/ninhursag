@@ -11,7 +11,6 @@ config.encoding = 'utf-8'
 
 class Config:
     # Flask env variables
-    ASSETS_DEBUG = config('FLASK_ASSETS_DEBUG', default=False, cast=bool)
     DEBUG = config('FLASK_DEBUG', default=False, cast=bool)
     ENV = config('FLASK_ENV', default='development')
     # To generate the secret key: python -c 'import secrets; print(secrets.token_hex())'
