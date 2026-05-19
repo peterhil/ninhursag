@@ -34,8 +34,6 @@ from flask import Flask
 from flask_cors import CORS
 
 from app.api.views import bp as api
-from app.frontend.views import bp as frontend
-from app.pages.views import bp as pages
 
 
 def create_app(package_name, settings_override=None):
@@ -54,7 +52,5 @@ def create_app(package_name, settings_override=None):
     CORS(app, resources={r"/api/*": {"origins": "*"}})
 
     app.register_blueprint(api)
-    app.register_blueprint(frontend)
-    app.register_blueprint(pages)
 
     return app
