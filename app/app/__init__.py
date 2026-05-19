@@ -4,16 +4,12 @@ from flask import render_template
 from werkzeug.middleware.proxy_fix import ProxyFix
 
 from . import factory
-from . import assets
 from . import log
 
 
 def create_app(settings_override=None):
     """Returns the application instance"""
     app = factory.create_app(__name__, settings_override)
-
-    # Init assets
-    assets.init_app(app)
 
     # Init logging
     log.init_app(app)
