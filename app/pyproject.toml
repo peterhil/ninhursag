@@ -6,15 +6,12 @@ authors = [
     {name = "Peter Hillerström", email = "peter.hillerstrom@gmail.com"},
 ]
 dependencies = [
-    "Flask-Assets>=2.1.0",
     "Flask-CORS==4.0.2",
     "Flask-RESTful==0.3.10",
     "Flask>=3.1.0",
-    "Markdown==3.8",
     "Unidecode==0.04.14",
     "Werkzeug>=3.1.3",
     "beautifulsoup4==4.9.3",
-    "cssmin==0.2.0",
     "gunicorn>=23.0.0",
     "numpy==1.26.4",
     "scipy==1.12.0",
