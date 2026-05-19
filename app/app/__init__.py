@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-from flask import render_template
 from werkzeug.middleware.proxy_fix import ProxyFix
 
 from . import factory
@@ -14,17 +13,7 @@ def create_app(settings_override=None):
     # Init logging
     log.init_app(app)
 
-    # Register custom error handlers
-    for code in [404, 500]:
-        app.errorhandler(code)(get_error_handler(code))
-
     return app
-
-
-def get_error_handler(code):
-    def handle_error(e):
-        return render_template('errors/%s.html' % code), code
-    return handle_error
 
 
 # http://www.onurguzel.com/how-to-run-flask-applications-with-nginx-using-gunicorn/
