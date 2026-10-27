@@ -5,7 +5,7 @@
 groups = ["default", "dev", "test"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:bd257077328b7a52329461082c6a5e9b50e475f21312df25e21d0fde56348f8e"
+content_hash = "sha256:2292f0e0697153db1a2eeac7ab439c76339a4b5cdfcbdec750f2ac5a5a9546cc"
 
 [[metadata.targets]]
 requires_python = "==3.10.*"
@@ -139,15 +139,18 @@ files = [
 
 [[package]]
 name = "flask-cors"
-version = "4.0.2"
-summary = "A Flask extension adding a decorator for CORS support"
+version = "6.0.5"
+requires_python = "<4.0,>=3.9"
+summary = "A Flask extension simplifying CORS support"
 groups = ["default"]
 dependencies = [
-    "Flask>=0.9",
+    "Werkzeug>=0.7",
+    "flask>=0.9",
+    "typing-extensions>=4.6.0; python_version < \"3.11\"",
 ]
 files = [
-    {file = "Flask_Cors-4.0.2-py2.py3-none-any.whl", hash = "sha256:38364faf1a7a5d0a55bd1d2e2f83ee9e359039182f5e6a029557e1f56d92c09a"},
-    {file = "flask_cors-4.0.2.tar.gz", hash = "sha256:493b98e2d1e2f1a4720a7af25693ef2fe32fbafec09a2f72c59f3e475eda61d2"},
+    {file = "flask_cors-6.0.5-py3-none-any.whl", hash = "sha256:68fcf75693e961f3af26683b23c4b9a8fb6b64de17d20d0c37b95e8de7ab2ed8"},
+    {file = "flask_cors-6.0.5.tar.gz", hash = "sha256:30c5031552cd59f620ac0c8211dac45b345d3b2df310e7721879e4f46ef9c601"},
 ]
 
 [[package]]
@@ -561,7 +564,7 @@ name = "typing-extensions"
 version = "4.13.2"
 requires_python = ">=3.8"
 summary = "Backported and Experimental Type Hints for Python 3.8+"
-groups = ["dev"]
+groups = ["default", "dev"]
 marker = "python_version < \"3.12\""
 files = [
     {file = "typing_extensions-4.13.2-py3-none-any.whl", hash = "sha256:a439e7c04b49fec3e5d3e2beaa21755cadbbdc391694e28ccdd36ca4a1408f8c"},

@@ -6,7 +6,7 @@ authors = [
     {name = "Peter Hillerström", email = "peter.hillerstrom@gmail.com"},
 ]
 dependencies = [
-    "Flask-CORS==4.0.2",
+    "Flask-CORS==6.0.5",
     "Flask-RESTful==0.3.10",
     "Flask>=3.1.0",
     "Unidecode==0.04.14",
