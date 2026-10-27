@@ -13,8 +13,8 @@ soup = BeautifulSoup(page, 'html.parser')
 trs = soup.select('tr')
 
 for tr in trs:
-    mineral = tr.select('td a[id]')
-    link = tr.select('td a[href*=".xlsx"]')
+    mineral = tr.select('td a[name]')
+    link = tr.select('td a[href]')
     if mineral and link:
         # print("\t".join([mineral[0].contents[0], link[0]['href']]))
         print(link[0]['href'])
